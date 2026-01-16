@@ -22,6 +22,7 @@ client.on('messageCreate', message => {
   }
 });
 
-client.login(process.env.TOKEN);
+client.login(process.env.DISCORD_TOKEN)
   .then(() => console.log('LOGIN ENVIADO AO DISCORD'))
-  .catch(err => console.error('ERRO AO LOGAR:', err));
+  .catch(err => console.error(err));
+
